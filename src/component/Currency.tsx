@@ -7,7 +7,7 @@ interface ICurrency {
 	title: string
 	inputRef?: any
 }
-export const Block: FC<ICurrency> = ({
+export const Currency: FC<ICurrency> = ({
 	onChangeValue,
 	value,
 	onChangeCurrency,

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useAppDispatch } from '../hook'
 import { getCurrency } from '../store/exchangeRateSlice'
-import { Block } from './Block'
+import { Currency } from './Currency'
 
 import '../App.css'
 
@@ -48,14 +48,14 @@ const App = () => {
 
 	return (
 		<section className='app'>
-			<Block
+			<Currency
 				title='В мене є'
 				value={valueFrom}
 				onChangeValue={onChangeValueFrom}
 				onChangeCurrency={onChangeCurrencyFrom}
 				inputRef={inputRef}
 			/>
-			<Block
+			<Currency
 				title='Я отримаю'
 				value={valueTo}
 				onChangeValue={onChangeValueTo}
